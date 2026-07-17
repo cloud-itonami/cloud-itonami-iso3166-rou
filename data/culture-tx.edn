@@ -1,0 +1,14 @@
+;; data/culture-tx.edn — DataScript tx-data derived from src/culture/facts.cljc
+;; `culture.facts/catalog` (ADR-2607171400 addendum 2, Wave 1 country-level).
+;; Same shape across every cloud-itonami-iso3166-* sibling. Do not hand-edit;
+;; regenerate from the catalog.
+
+[
+#:culture{:id "rou.dish.sarmale", :name "Sarmale", :country "ROU", :kind :dish, :summary "A central part of Romanian cuisine and the country's national dish, also eaten in Moldova.", :url "https://en.wikipedia.org/wiki/Sarmale", :url-provenance :wikipedia-en, :retrieved-at "2026-07-17"}
+#:culture{:url "https://en.wikipedia.org/wiki/Mici", :id "rou.dish.mici", :kind :dish, :name-local "Mititei", :country "ROU", :retrieved-at "2026-07-17", :summary "Traditional dish from Romanian cuisine, consisting of grilled ground-meat sausages made from beef, lamb and pork with various spices.", :name "Mici", :url-provenance :wikipedia-en}
+#:culture{:url "https://en.wikipedia.org/wiki/Papana%C8%99i", :id "rou.dish.papanasi", :kind :dish, :name-local "Papanași", :country "ROU", :retrieved-at "2026-07-17", :summary "Romanian dessert made from fresh-cheese dough, usually served topped with cream and fruit confit.", :name "Papanasi", :url-provenance :wikipedia-en}
+#:culture{:url "https://en.wikipedia.org/wiki/%C8%9Auic%C4%83", :id "rou.beverage.tuica", :kind :beverage, :name-local "Țuică", :country "ROU", :retrieved-at "2026-07-17", :summary "Traditional Romanian spirit that contains approximately 24-86% alcohol by volume and is prepared exclusively from plums.", :name "Tuica", :url-provenance :wikipedia-en}
+#:culture{:url "https://en.wikipedia.org/wiki/M%C4%83r%C8%9Bi%C8%99or", :id "rou.craft.martisor", :kind :craft, :name-local "Mărțișor", :country "ROU", :retrieved-at "2026-07-17", :summary "Tradition celebrated at the beginning of Spring in March, involving a handmade object of two intertwined red and white strings with hanging tassels, originating from Roman New Year celebrations and practiced throughout Romania and Moldova.", :name "Martisor", :url-provenance :wikipedia-en}
+#:culture{:id "rou.craft.horezu-ceramics", :name "Horezu ceramics", :country "ROU", :kind :craft, :summary "Unique type of Romanian pottery traditionally produced by hand around the town of Horezu, recognized by UNESCO as intangible cultural heritage in 2012.", :url "https://en.wikipedia.org/wiki/Horezu_ceramics", :url-provenance :wikipedia-en, :retrieved-at "2026-07-17"}
+#:culture{:url "https://en.wikipedia.org/wiki/Wooden_Churches_of_Maramure%C8%99", :id "rou.heritage.wooden-churches-of-maramures", :kind :heritage, :name-local "Bisericile de lemn din Maramureș", :country "ROU", :retrieved-at "2026-07-17", :summary "Eight wooden churches in the Maramures region were listed by UNESCO as World Heritage Sites in 1999, for their religious architecture and timber construction traditions.", :name "Wooden Churches of Maramures", :url-provenance :wikipedia-en}
+]
