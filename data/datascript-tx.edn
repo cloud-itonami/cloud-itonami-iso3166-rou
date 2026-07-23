@@ -1,0 +1,33 @@
+;; data/datascript-tx.edn — DataScript tx-data derived from src/statute/facts.cljc
+;; `statute.facts/catalog` (ADR-2607141700 Wave 0). Same shape as sibling files.
+
+[#:statute{:id "rou.legea-31-1990-legea-societatilor"
+           :title "Legea societăților nr. 31/1990 (Companies Law)"
+           :jurisdiction "ROU"
+           :kind :law
+           :law-number "republicată; republicare curentă publicată în Monitorul Oficial al României, Partea I, nr. 279 din 21 aprilie 2003 (republicare anterioară: Partea I, nr. 33 din 29 ianuarie 1998); modificată ulterior inclusiv prin Legea nr. 223/2020 și Legea nr. 222/2023 -- exact original-1990 Monitorul Oficial issue number not independently re-confirmed this session, see catalog docstring"
+           :url "https://www.onrc.ro/index.php/ro/legislatie"
+           :url-provenance :official-onrc
+           :enacted-date "2003-04-21"
+           :retrieved-at "2026-07-23"
+           :topic [:corporate-governance :incorporation]}
+ #:statute{:id "rou.legea-190-2018-gdpr-implementing-measures"
+           :title "Legea nr. 190/2018 privind măsuri de punere în aplicare a Regulamentului (UE) 2016/679 (GDPR implementing-measures law)"
+           :jurisdiction "ROU"
+           :kind :law
+           :law-number "LEGE nr. 190 din 18 iulie 2018 (Monitorul Oficial issue number not shown on the ANSPDCP pages fetched this session -- see catalog docstring); in force since 31 July 2018 per ANSPDCP"
+           :url "https://www.dataprotection.ro/servlet/ViewDocument?id=1520"
+           :url-provenance :official-anspdcp
+           :enacted-date "2018-07-18"
+           :retrieved-at "2026-07-23"
+           :topic [:data-protection :privacy]}
+ #:statute{:id "rou.legea-53-2003-codul-muncii"
+           :title "Legea nr. 53/2003 - Codul muncii (Labour Code)"
+           :jurisdiction "ROU"
+           :kind :law
+           :law-number "adoptată 24 ianuarie 2003; formă republicată publicată în Monitorul Oficial al României, Partea I, nr. 345 din 18 mai 2011, per ro.wikipedia.org (secondary source, official ministry/inspectorate pages did not surface this citation this session -- see catalog docstring)"
+           :url "https://ro.wikipedia.org/wiki/Codul_muncii_al_Rom%C3%A2niei"
+           :url-provenance :wikipedia-ro-secondary
+           :enacted-date "2003-01-24"
+           :retrieved-at "2026-07-23"
+           :topic [:labor :employment]}]

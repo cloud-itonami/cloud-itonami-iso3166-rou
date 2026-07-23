@@ -6,6 +6,28 @@
 clojure -M:dev:test
 ```
 
+## Statute catalog
+
+Alongside the market-entry catalog, this repo carries a **general-law
+compliance catalog** (ADR-2607141700, cloud-itonami-compliance-fact-
+federation) of statutes a company operating in Romania must generally
+track for compliance:
+
+- `src/statute/facts.cljc` — the catalog, source of truth: Legea
+  societăților nr. 31/1990 (companies law, extends `marketentry.facts`'s
+  existing `onrc.ro` corporate-number citation), Legea nr. 190/2018
+  (GDPR implementing-measures law, fetched directly from ANSPDCP),
+  Legea nr. 53/2003 — Codul muncii (labour code).
+- `schema/statute.edn` — DataScript schema.
+- `data/datascript-tx.edn` — derived DataScript tx-data (regenerated
+  from the catalog, never hand-edited).
+
+Same provenance discipline as the market-entry catalog: every entry
+cites a source actually fetched this session, with honest disclosure of
+weaker-tier or unreachable sources (see the `statute.facts` namespace
+docstring) rather than an invented citation. An entry not in
+`statute.facts/catalog` has no spec-basis — never fabricate one.
+
 ## Culture catalog
 
 Alongside the market-entry / statute catalogs, this repo carries a
