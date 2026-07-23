@@ -31,8 +31,15 @@
  [request-approval ->] commit/hold StateGraph, `store/append-ledger!`
  called from both the `:commit` and `:hold` nodes), phase.cljc (0->3
  rollout, `:filing/draft`/`:filing/submit` permanently excluded from
- every phase's `:auto` set). 29 tests / 96 assertions passing
- (governor contract + store parity + facts + phase + registry, plus
- this repo's separate `culture` domain namespace, left untouched),
- clj-kondo clean (0 errors, 10 non-fatal unused-binding/unused-require
- warnings, all pre-existing and unrelated to this change)."}
+ every phase's `:auto` set), plus src/statute/* (general-law
+ compliance catalog, ADR-2607141700: facts.cljc with Legea 31/1990
+ (companies, extending marketentry.facts' own onrc.ro citation), Legea
+ 190/2018 (GDPR implementing measures, fetched directly from
+ ANSPDCP), Legea 53/2003 -- Codul muncii; schema/statute.edn +
+ data/datascript-tx.edn). 33 tests / 108 assertions passing
+ (governor contract + store parity + facts + phase + registry +
+ statute facts, plus this repo's separate `culture` domain namespace,
+ left untouched -- up from 29 tests / 96 assertions before the
+ statute catalog addition), clj-kondo clean (0 errors, 10 non-fatal
+ unused-binding/unused-require warnings, all pre-existing and
+ unrelated to this change)."}
