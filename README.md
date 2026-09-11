@@ -3,7 +3,7 @@
 **`:implemented`** for **ROU**. Flagship `eu-establishment-missing`, tax `cui-unverified`.
 
 ```
-clojure -M:dev:test
+kbb -M:dev:test
 ```
 
 ## Statute catalog
