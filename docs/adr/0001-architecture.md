@@ -7,7 +7,7 @@
 Closed the structural country-axis gap: this repo had `culture` and
 `marketentry` but no `statute` catalog, unlike fully-scaffolded
 iso3166 siblings (e.g. `-pol`, `-bgr`, `-hrv`). Added
-`src/statute/facts.cljc` — three general-law entries (companies,
+`src/statute/facts.cljk` — three general-law entries (companies,
 GDPR-implementing, labour), each independently sourced this session
 (`onrc.ro`, `dataprotection.ro`/ANSPDCP, `ro.wikipedia.org`). The
 companies-law entry (Legea 31/1990) deliberately reuses the same
@@ -20,4 +20,4 @@ dropped rather than seeded unverified: `legislatie.just.ro`,
 with connection-level errors (not bot-detection challenges — no
 challenge was ever served, so no bypass was attempted or appropriate),
 and no reachable page named the law with a citable number/date. See
-`src/statute/facts.cljc` docstring for the full provenance trail.
+`src/statute/facts.cljk` docstring for the full provenance trail.
